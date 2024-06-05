@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Dropdown from "./Dropdown";
 
 function App() {
+  const items = ["volvo", "mercedes", "item3"];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="flex flex-col justify-center items-center text-center mt-12 ">
+        <div className="w-96 h-56 p-1  bg-orange-400"> 
+
+        <h1 className="text-2xl">Should you use a dropdown ?</h1>
+        <Dropdown items={items} />
+        </div>
+      </div>
+    </>
   );
 }
 

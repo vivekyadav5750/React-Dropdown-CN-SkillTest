@@ -1,0 +1,32 @@
+/* Style for the dropdown container */
+.dropdown-container {
+    display: inline-block;
+    position: relative;
+  }
+  
+  /* Style for the select element */
+  .dropdown {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Style for the select element when open */
+  .dropdown.open {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    outline: none;
+    background-color: #f0f0f0;
+  }
+  
+  .dropdown.open option {
+    display: block;
+  }
+  
+  /* Hide options initially */
+  .dropdown option {
+    display: none;
+  }
+  
