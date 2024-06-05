@@ -7,13 +7,13 @@ function Dropdown(props) {
 
   return (
     <div className="p-2">
-      <select className="p-2 m-1" onMouseEnter={() => setHover(true)} >
+      <select className="p-2 m-1 rounded-md" onMouseEnter={() => setHover(true)}  >
         <option value="">--Select--</option>
       </select>
 
       {hover && (<ul>
         {items.map((item,index) => (
-          <li className="p-2 hover:bg-slate-400 bg-white"  key={index} onClick={() => setHover(false)}>
+          <li className="p-2 rounded-md hover:bg-slate-400 bg-white" key={index} onClick={() => setHover(false)}>
             {item}
             </li>
         ))}
